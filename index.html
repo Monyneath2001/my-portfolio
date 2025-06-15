@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FDE4BE;
+      padding: 60px 40px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #000;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .hero-img img {
+      width: 250px;
+      border-radius: 15px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 60px 40px;
+    }
+
+    .about-left {
+      background-color: #A1E1E0;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 40px;
+    }
+
+    .about-left img {
+      width: 180px;
+    }
+
+    .about-right {
+      max-width: 400px;
+    }
+
+    .about-right h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .about-right ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-right ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    /* Working On Section */
+    .working {
+      background-color: #f9c9d6;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .working h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .working p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    /* Main Content Section (Goals) */
+.main-content {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between;
+    padding: 60px 80px; /* Adjust padding as needed */
+    gap: 50px; /* Space between the title and the list */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+/* Title Container ("My Future Goal") */
+.title-container {
+    flex-basis: 30%; /* Gives the title container a base width */
+    min-width: 250px; /* Prevents it from becoming too small */
+}
+
+.main-title {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2; /* Spacing between "My Future" and "Goal" */
+    margin: 0;
+}
+
+/* Goals List (Right side) */
+.goals-list-container {
+    flex-basis: 50%; /* Gives the list container a base width */
+    padding-top: 10px; /* Aligns the top of the list with the top of the title */
+}
+
+.goals-list-container ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Removes the default list bullets */
+}
+
+.goals-list-container li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Space between each list item */
+}
+
+/* Footer Section */
+.site-footer {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 4px solid #000000; /* The thick black line */
+    padding: 25px 80px; /* Vertical and horizontal padding */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.site-footer p {
+    margin: 5px 0; /* Adjusts the space between the phone and email lines */
+}
+
+.site-footer a {
+    color: inherit; /* Makes the link color black */
+    text-decoration: underline; /* Ensures the underline is always visible */
+}
+
+.site-footer a:hover {
+    opacity: 0.7; /* Optional: adds a slight fade on hover */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">👋</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About me</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>My Portfolio</h1>
+      <button>Read about me</button>
+    </div>
+    <div class="hero-img">
+      <img src="image/A.png" alt="Main Photo">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-left">
+      <img src="image/e.png" alt="About Photo">
+    </div>
+    <div class="about-right">
+      <h2>Hello!!!</h2>
+      <ul>
+        <li>From Siem Reap, Cambodia</li>
+        <li>Bachelor’s Degree in Banking and Finance</li>
+        <li>Curious, open-minded, and positive</li>
+        <li>Passionate about learning beyond my field</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Working On Section -->
+  <section class="working">
+    <h2>What I’m Working On</h2>
+    <p>Exploring UI/UX design and digital creativity</p>
+    <p>Learning tools like Canva, Notion, and Figma</p>
+  </section>
+ <title>Footer Example</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="content">
+        <!-- The main content of your page would go here -->
+    </div>
+
+     <title>My Future Goal</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="main-content">
+        <div class="title-container">
+            <h1 class="main-title">
+                My Future<br>Goal
+            </h1>
+        </div>
+
+        <div class="goals-list-container">
+            <ul>
+                <li>Combine finance knowledge with creative skills</li>
+                <li>Join workshops or scholarships in design/tech</li>
+                <li>Work on meaningful projects that help others</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Phone number: 095 95 69 05</p>
+        <p>Email: <a href="mailto:rotthamonyneath280@gmail.com">rotthamonyneath280@gmail.com</a></p>
+    </footer>
+</body>
+</html>
